@@ -1,0 +1,27 @@
+#!/bin/bash
+
+qemu-system-x86_64 \
+-machine type=pc,accel=kvm \
+-enable-kvm -cpu host \
+-smp cores=4 \
+-boot order=dc \
+-m size=8G,maxmem=12G,slots=1 \
+-k de \
+-soundhw hda \
+-drive if=pflash,format=raw,readonly,file=/path/to/bios.bin \
+-balloon virtio \
+-name "Windows 10" \
+-device virtio-scsi-pci,id=scsi \
+ -drive file=/path/to/image.iso,id=isocd,format=raw,if=none -device scsi-cd,drive=isocd \
+ -drive file=/path/to/hdd_image.img,id=disk,format=raw,if=none,cache=writeback -device scsi-hd,drive=disk \
+ -drive file=/path/to/virtio.iso,id=virtiocd,if=none,format=raw -device ide-cd,bus=ide.1,drive=virtiocd
+-usbdevice tablet \
+-display gtk \
+-vga std \
+
+##############################################################################################################################
+# -drive file=/path/to/ ,if=ide,media=cdrom \                                                                                #
+# -drive file=/path/to/,if=ide,media=cdrom  \                                                                                #
+# -drive file=/path/to/,if=ide,media=cdrom \                                                                                 #
+# -bios /path/to/ \                                                                                                          #   
+##############################################################################################################################

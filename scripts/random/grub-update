@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "This script will update Grub, use if you installed a new kernel or edited grub.cfg"
+
+echo "Press Enter to continue or Ctrl+C to exit..." && read
+
+echo -n "update grub.cfg? [y/N] " && read answer
+if [ "$answer" == "y" ]; then
+	os-prober
+	grub-mkconfig -o /boot/grub/grub.cfg
+fi
+
+echo "Press Enter to exit..." && read

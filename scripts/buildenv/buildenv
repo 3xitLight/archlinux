@@ -1,0 +1,58 @@
+#!/bin/bash
+
+echo "  "
+echo "  "
+echo "  "
+echo "  "
+echo "  "
+echo "  "
+echo "  "
+echo "  "
+echo "  "
+
+sleep 3
+
+echo "  "
+sleep 1
+export user=$(whoami)
+
+
+echo "  "
+sleep 2
+git config --global user.email "xnnism@gmail.com"
+git config --global user.name "xNNism"
+
+echo "gpg --receive-keys 702353E0F7E48EDB"
+sleep 1
+gpg --receive-keys 702353E0F7E48EDB
+
+
+
+echo "cp yaourtrc"
+sleep 1
+sudo cp yaourtrc /etc/yaourtrc
+
+
+echo "  "
+sleep 1
+sudo pacman -S --needed android-tools asciidoc b43-fwcutter bash bc bin86 binutils boost bzip2 cdrkit fastjar findutils flex gawk gcc gettext git gtk2 \
+intltool jdk7-openjdk jdk8-openjdk jdk9-openjdk jdk10-openjdk lib32-libxslt lib32-util-linux libusb libxslt make mercurial \
+fastjar ncurses openssl patch perl perl-extutils-makemaker rsync ruby sharutils subversion unzip util-linux wget zlib repo \
+python2-pip python-pip pypy python2-pipenv python-pipenv squashfs lzop wxgtk3 \
+
+echo "yaourt -S ...  "
+sleep 1
+yaourt -S sdcc boost android-sdk-platform-tools android-sdk-build-tools aosp-devel lineageos-devel 
+
+echo "  "
+sleep 1
+sudo groupadd sdkusers
+sudo gpasswd -a $user sdkusers
+sudo chown -R :sdkusers /opt/android-sdk/
+sudo chmod -R g+w /opt/android-sdk/
+newgrp sdkusers
+
+
+echo "......done"
+sleep 3
+exit

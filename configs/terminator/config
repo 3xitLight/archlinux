@@ -1,0 +1,124 @@
+[global_config]
+  enabled_plugins = CustomCommandsMenu,
+  suppress_multiple_term_dialog = True
+  title_font = xos4 Terminus Bold 13
+  title_receive_bg_color = "#a40000"
+  title_transmit_bg_color = "#000000"
+  title_use_system_font = False
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      size = 900, 600
+      type = Window
+[plugins]
+  [[CustomCommandsMenu]]
+    [[[" cmatrix -bsf -C white"]]]
+      command = " cmatrix -bsf -C white"
+      enabled = True
+      name = " cmatrix -bsf -C white"
+      position = 1
+    [[[" export CCACHE_DIR=/home/xnn/.ccache"]]]
+      command = " export CCACHE_DIR=/home/xnn/.ccache"
+      enabled = True
+      name = " export CCACHE_DIR=/home/xnn/.ccache"
+      position = 9
+    [[[. build/envsetup.sh]]]
+      command = . build/envsetup.sh
+      enabled = True
+      name = . build/envsetup.sh
+      position = 16
+    [[[adb sideload]]]
+      command = adb sideload
+      enabled = True
+      name = adb sideload
+      position = 15
+    [[[arch_android.sh]]]
+      command = /home/xnn/Desktop/arch_android.sh
+      enabled = True
+      name = arch_android.sh
+      position = 4
+    [[[export ARCH=arm]]]
+      command = export ARCH=arm
+      enabled = True
+      name = export ARCH=arm
+      position = 12
+    [[[export CROSS_COMPILE=/opt/toolchains/UBERTC-arm-eabi-4.8/bin/arm-eabi-]]]
+      command = export CROSS_COMPILE=/opt/toolchains/UBERTC-arm-eabi-4.8/bin/arm-eabi-
+      enabled = True
+      name = export CROSS_COMPILE=/opt/toolchains/UBERTC-arm-eabi-4.8/bin/arm-eabi-
+      position = 13
+    [[[export USE_CCACHE=1]]]
+      command = export USE_CCACHE=1
+      enabled = True
+      name = export USE_CCACHE=1
+      position = 8
+    [[[googler]]]
+      command = googler -h
+      enabled = True
+      name = googler
+      position = 2
+    [[[gpg --receive-keys]]]
+      command = gpg --receive-keys  <KEY>
+      enabled = True
+      name = gpg --receive-keys
+      position = 11
+    [[[prebuilts/misc/linux-x86/ccache/ccache -M 50G]]]
+      command = prebuilts/misc/linux-x86/ccache/ccache -M 50G
+      enabled = True
+      name = prebuilts/misc/linux-x86/ccache/ccache -M 50G
+      position = 5
+    [[[qemu on USB]]]
+      command = "sudo qemu-system-x86_64 -machine type=pc,accel=kvm -enable-kvm -cpu host -smp cores=4 -m size=4G -vga std -k de -hda /dev/sdd"
+      enabled = True
+      name = qemu on USB
+      position = 0
+    [[[repo sync --force-sync]]]
+      command = repo sync --force-sync
+      enabled = True
+      name = repo sync --force-sync
+      position = 14
+    [[[repo sync -f --force-sync --no-clone-bundle]]]
+      command = repo sync -f --force-sync --no-clone-bundle
+      enabled = True
+      name = repo sync -f --force-sync --no-clone-bundle
+      position = 17
+    [[["sudo grub-mkconfig -o "]]]
+      command = sudo grub-mkconfig -o /boot/grub/grub.cfg
+      enabled = True
+      name = "sudo grub-mkconfig -o "
+      position = 7
+    [[[sudo mkinitcpio -p linux]]]
+      command = sudo mkinitcpio -p linux
+      enabled = True
+      name = sudo mkinitcpio -p linux
+      position = 10
+    [[[tar -Jxf berryboot.img]]]
+      command = tar -Jxf
+      enabled = True
+      name = tar -Jxf berryboot.img
+      position = 3
+    [[[zip -r9 UPDATE-AnyKernel2.zip * -x README UPDATE-AnyKernel2.zip]]]
+      command = zip -r9 UPDATE-AnyKernel2.zip * -x README UPDATE-AnyKernel2.zip
+      enabled = True
+      name = zip -r9 UPDATE-AnyKernel2.zip * -x README UPDATE-AnyKernel2.zip
+      position = 6
+[profiles]
+  [[default]]
+    background_color = "#111111"
+    background_darkness = 0.94
+    background_type = transparent
+    cursor_color = "#a40000"
+    cursor_color_fg = False
+    font = RobotoMono Nerd Font 12
+    foreground_color = "#d3d7cf"
+    icon_bell = False
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    scrollback_infinite = True
+    scrollback_lines = 15000
+    show_titlebar = False
+    use_system_font = False

@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+  <menu id="root-menu" label="Openbox 3">
+    <separator label="ArchLabs"/>
+    <item label="Run Program">
+      <action name="Execute">
+        <command>gmrun</command>
+      </action>
+    </item>
+    <separator/>
+    <separator/>
+    <item label="Terminal" icon="/mnt/HDD/archlinux/icons/terminal.png">
+      <action name="Execute">
+        <command>terminator</command>
+      </action>
+    </item>
+    <item label="Web Browser" icon="/mnt/HDD/archlinux/icons/chrome.png">
+      <action name="Execute">
+        <command>exo-open --launch webbrowser</command>
+      </action>
+    </item>
+    <item label="File Manager" icon="/mnt/HDD/archlinux/icons/filemanager.png">
+      <action name="Execute">
+        <command>exo-open --launch filemanager</command>
+      </action>
+    </item>
+    <item label="PGP">
+      <action name="Execute">
+        <command>gpa</command>
+      </action>
+    </item>
+    <separator/>
+    <item label="Spotify" icon="/mnt/HDD/archlinux/icons/spotify.png">
+      <action name="Execute">
+        <command>spotify</command>
+      </action>
+    </item>
+    <item label="EQualizer" icon="/mnt/HDD/archlinux/icons/eq.png">
+      <action name="Execute">
+        <execute>/usr/bin/pulseaudio-equalizer-gtk</execute>
+      </action>
+    </item>
+    <separator/>
+    <separator/>
+    <separator/>
+    <separator/>
+    <menu id="editors" label="Editors">
+      <item label="Geany">
+        <action name="Execute">
+          <command>geany</command>
+        </action>
+      </item>
+      <item label="Meld">
+        <action name="Execute">
+          <command>meld</command>
+        </action>
+      </item>
+      <item label="Sublime">
+        <action name="Execute">
+          <command>sublime</command>
+        </action>
+      </item>
+      <item label="Atom">
+        <action name="Execute">
+          <command>atom</command>
+        </action>
+      </item>
+      <item label="Haroopad">
+        <action name="Execute">
+          <command>gksu /usr/bin/haroopad</command>
+        </action>
+      </item>
+    </menu>
+    <menu id="accessories" label="Serial">
+      <item label="Putty">
+        <action name="Execute">
+          <command>gksu putty</command>
+        </action>
+      </item>
+      <item label="GTK-Term">
+        <action name="Execute">
+          <command>gksu /usr/bin/gtkterm</command>
+        </action>
+      </item>
+      <item label="moserial">
+        <action name="Execute">
+          <command>gksu /usr/bin/moserial</command>
+        </action>
+      </item>
+      <item label="hterm">
+        <action name="Execute">
+          <command>gksu hterm</command>
+        </action>
+      </item>
+      <item label="ponyprog2000">
+        <action name="Execute">
+          <command>gksu /usr/bin/ponyprog2000</command>
+        </action>
+      </item>
+      <item label="tinyserial">
+        <action name="Execute">
+          <command>gksu com</command>
+        </action>
+      </item>
+      <item label="cutecom">
+        <action name="Execute">
+          <command>gksu /usr/bin/cutecom</command>
+        </action>
+      </item>
+      <item label="EasyTerm">
+        <action name="Execute">
+          <command>gksu /usr/bin/EasyTerm</command>
+        </action>
+      </item>
+    </menu>
+    <menu id="utils" label="Utils">
+      <item label="RECStudio">
+        <action name="Execute">
+          <command>gksu /usr/bin/recstudio</command>
+        </action>
+      </item>
+      <item label="OllyDBG32">
+        <action name="Execute">
+          <command>gksu /usr/bin/ollydbg</command>
+        </action>
+      </item>
+      <item label="EDB">
+        <action name="Execute">
+          <command>gksu edb</command>
+        </action>
+      </item>
+    </menu>
+    <menu id="development" label="Development">
+      <item label="Electron">
+        <action name="Execute">
+          <command>electron</command>
+        </action>
+      </item>
+      <item label="Atom">
+        <action name="Execute">
+          <command>atom</command>
+        </action>
+      </item>
+      <item label="Arduino-Studio">
+        <action name="Execute">
+          <command>gksu arduino</command>
+        </action>
+      </item>
+      <item label="Qt.Creator">
+        <action name="Execute">
+          <command>qtcreator</command>
+        </action>
+      </item>
+      <item label="Meld">
+        <action name="Execute">
+          <command>meld</command>
+        </action>
+      </item>
+      <item label="Pycharm IDE">
+        <action name="Execute">
+          <command>pycharm</command>
+        </action>
+      </item>
+      <item label="Android-Studio">
+        <action name="Execute">
+          <command>sudo anfroid-studio</command>
+        </action>
+      </item>
+      <item label="Netbeans IDE">
+        <action name="Execute">
+          <command>New Command</command>
+        </action>
+      </item>
+      <item label="Geany">
+        <action name="Execute">
+          <command>geany</command>
+        </action>
+      </item>
+      <item label="Sublime Text">
+        <action name="Execute">
+          <command>subl3</command>
+        </action>
+      </item>
+    </menu>
+    <menu id="graphics" label="Graphics">
+      <item label="Pinta">
+        <action name="Execute">
+          <command>pinta</command>
+        </action>
+      </item>
+      <item label="Gimp">
+        <action name="Execute">
+          <command>gimp</command>
+        </action>
+      </item>
+      <item label="Gpick">
+        <action name="Execute">
+          <command>gpick</command>
+        </action>
+      </item>
+      <item label="Gpicview">
+        <action name="Execute">
+          <command>gpicview</command>
+        </action>
+      </item>
+      <item label="Inkscape">
+        <action name="Execute">
+          <command>inkscape</command>
+        </action>
+      </item>
+      <item label="Peek">
+        <action name="Execute">
+          <command>peek</command>
+        </action>
+      </item>
+      <item label="Screenshot">
+        <action name="Execute">
+          <command>scrot 'ArchLabs-%Y-%m-%d-%S_$wx$h.png'</command>
+        </action>
+      </item>
+      <item label="Viewnior">
+        <action name="Execute">
+          <command>viewnior</command>
+        </action>
+      </item>
+    </menu>
+    <menu id="audio" label="Audio">
+      <item label="Spotify">
+        <action name="Execute">
+          <command>spotify</command>
+        </action>
+      </item>
+      <item label="Pulse Audio Preferences">
+        <action name="Execute">
+          <command>pavucontrol</command>
+        </action>
+      </item>
+    </menu>
+    <menu id="video" label="Video">
+      <item label="QMediathekView">
+        <action name="Execute">
+          <command>QMediathekView</command>
+        </action>
+      </item>
+      <item label="VLC">
+        <action name="Execute">
+          <command>vlc</command>
+        </action>
+      </item>
+      <item label="SM-Player">
+        <action name="Execute">
+          <command>smplayer</command>
+        </action>
+      </item>
+      <item label="Porntime">
+        <action name="Execute">
+          <command>/usr/bin/porntime</command>
+        </action>
+      </item>
+      <item label="Popcorntime">
+        <action name="Execute">
+          <command>/usr/bin/popcorntime-ce</command>
+        </action>
+      </item>
+    </menu>
+    <menu id="network" label="Network">
+      <menu id="new_id" label="Onion"/>
+      <item label="tigervnc">
+        <action name="Execute">
+          <command>/usr/bin/vncviewer</command>
+        </action>
+      </item>
+      <item label="JDownloader">
+        <action name="Execute">
+          <command>jdownloader</command>
+        </action>
+      </item>
+      <item label="vncTerminal">
+        <action name="Execute">
+          <command>gksu terminator  --profile=stayopen --command=/usr/bin/linuxvnc</command>
+        </action>
+      </item>
+      <item label="Firefox">
+        <action name="Execute">
+          <command>firefox</command>
+        </action>
+      </item>
+      <item label="Chromium">
+        <action name="Execute">
+          <command>chromium</command>
+        </action>
+      </item>
+      <item label="Filezilla">
+        <action name="Execute">
+          <command>filezilla</command>
+        </action>
+      </item>
+      <item label="torrentTransmission">
+        <action name="Execute">
+          <command>transmission-gtk</command>
+        </action>
+      </item>
+    </menu>
+    <menu id="root-menu-41448" label="VM">
+      <item label="VirtualBox">
+        <action name="Execute">
+          <command>gksu virtualbox</command>
+        </action>
+      </item>
+      <item label="Virt-Manager /KVM">
+        <action name="Execute">
+          <command>gksu virt-manager</command>
+        </action>
+      </item>
+      <item label="MultibootUSB">
+        <action name="Execute">
+          <execute>gksu /usr/bin/multibootusb-pkexec</execute>
+        </action>
+      </item>
+      <item label="WOEusb">
+        <action name="Execute">
+          <execute>gksu /usr/bin/woeusbgui</execute>
+        </action>
+      </item>
+    </menu>
+    <separator/>
+    <separator/>
+    <separator/>
+    <menu id="preferences" label="Preferences">
+      <menu id="obConfig" label="Openbox">
+        <item label="Edit menu.xml">
+          <action name="Execute">
+            <command>exo-open ~/.config/openbox/menu.xml</command>
+          </action>
+        </item>
+        <item label="Edit rc.xml">
+          <action name="Execute">
+            <command>exo-open ~/.config/openbox/rc.xml</command>
+          </action>
+        </item>
+        <item label="Edit autostart">
+          <action name="Execute">
+            <command>exo-open ~/.config/openbox/autostart</command>
+          </action>
+        </item>
+        <separator/>
+        <item label="GUI Menu Editor">
+          <action name="Execute">
+            <command>obmenu3</command>
+          </action>
+        </item>
+        <item label="GUI Config Tool">
+          <action name="Execute">
+            <command>obconf</command>
+          </action>
+        </item>
+        <item label="GUI Keybinds">
+          <action name="Execute">
+            <command>obkey</command>
+          </action>
+        </item>
+        <separator/>
+        <item label="Reconfigure">
+          <action name="Reconfigure"/>
+        </item>
+        <item label="Restart">
+          <action name="Restart"/>
+        </item>
+      </menu>
+      <menu execute="al-compositor" id="CompositingPipeMenu" label="Compositor"/>
+      <menu execute="/usr/bin/al-conky-pipemenu" id="pipe-conkymenu" label="Conky"/>
+      <menu execute="/usr/bin/al-tint2-pipemenu" id="pipe-tint2menu" label="Tint2"/>
+      <item label="Tint2 GUI">
+        <action name="Execute">
+          <command>tint2conf</command>
+        </action>
+      </item>
+      <separator/>
+      <item label="Lxappearance">
+        <action name="Execute">
+          <command>lxappearance</command>
+        </action>
+      </item>
+      <item label="Xfce4 Appearance">
+        <action name="Execute">
+          <command>xfce4-appearance-settings</command>
+        </action>
+      </item>
+      <item label="LightDM Appearance">
+        <action name="Execute">
+          <command>gksudo lightdm-gtk-greeter-settings</command>
+        </action>
+      </item>
+      <item label="Slim Appearance">
+        <action name="Execute">
+          <command>gksudo geany /etc/slim.conf</command>
+        </action>
+      </item>
+      <item label="Rofi Appearance">
+        <action name="Execute">
+          <command>rofi-theme-selector rofi -modi drun,run -show drun -width 700 -location 0 -font "Noto Sans 13"</command>
+        </action>
+      </item>
+      <item label="Termite Appearance">
+        <action name="Execute">
+          <command>geany ~/.config/termite/config</command>
+        </action>
+      </item>
+      <item label="Exit Appearance">
+        <action name="Execute">
+          <command>gksudo geany /etc/oblogout.conf</command>
+        </action>
+      </item>
+      <item label="Choose Wallpaper">
+        <action name="Execute">
+          <command>nitrogen</command>
+        </action>
+      </item>
+      <separator/>
+      <item label="Notifications">
+        <action name="Execute">
+          <command>xfce4-notifyd-config</command>
+        </action>
+      </item>
+      <item label="Pulseaudio Preferences">
+        <action name="Execute">
+          <command>pavucontrol</command>
+        </action>
+      </item>
+      <item label="Oomox">
+        <action name="Execute">
+          <command>oomox-gui</command>
+        </action>
+      </item>
+      <separator/>
+      <item label="Preferred Applications">
+        <action name="Execute">
+          <command>exo-preferred-applications</command>
+        </action>
+      </item>
+      <item label="Power Management">
+        <action name="Execute">
+          <command>xfce4-power-manager-settings</command>
+        </action>
+      </item>
+      <item label="Xfce4 Settings Manager">
+        <action name="Execute">
+          <command>xfce4-settings-manager</command>
+        </action>
+      </item>
+      <item label="Dmenu">
+        <action name="Execute">
+          <command>dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'</command>
+        </action>
+      </item>
+      <item label="Screen Layout Editor">
+        <action name="Execute">
+          <command>arandr</command>
+        </action>
+      </item>
+      <item label="Printing">
+        <action name="Execute">
+          <command>system-config-printer</command>
+        </action>
+      </item>
+    </menu>
+    <menu id="system-settings" label="System Settings">
+      <item label="Pamac Package Manager">
+        <action name="Execute">
+          <command>pamac-manager</command>
+        </action>
+      </item>
+      <item label="Pamac Package Updater">
+        <action name="Execute">
+          <command>pamac-updater</command>
+        </action>
+      </item>
+      <separator/>
+      <item label="File Manager As Root">
+        <action name="Execute">
+          <command>gksudo thunar</command>
+        </action>
+      </item>
+      <item label="Text Editor As Root">
+        <action name="Execute">
+          <command>gksudo geany</command>
+        </action>
+      </item>
+      <separator/>
+      <item label="Login Settings">
+        <action name="Execute">
+          <command>gksudo geany /etc/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/lightdm.conf</command>
+        </action>
+      </item>
+      <item label="GParted">
+        <action name="Execute">
+          <command>gksudo gparted</command>
+        </action>
+      </item>
+      <separator/>
+      <item label="Disks">
+        <action name="Execute">
+          <command>gnome-disks</command>
+        </action>
+      </item>
+      <item label="System Profiler and Benchmark">
+        <action name="Execute">
+          <command>hardinfo</command>
+        </action>
+      </item>
+      <item label="System Resources">
+        <action name="Execute">
+          <execute>gksu baobab</execute>
+        </action>
+      </item>
+      <item label="Task Manager">
+        <action name="Execute">
+          <command>mate-system-monitor</command>
+        </action>
+      </item>
+    </menu>
+    <separator/>
+    <item label="Obmenu">
+      <action name="Execute">
+        <command>obmenu3</command>
+      </action>
+    </item>
+    <item label="Monitor-Settings" icon="/mnt/HDD/archlinux/icons-64x-spotify_black.png">
+      <action name="Execute">
+        <command>arandr</command>
+      </action>
+    </item>
+    <item label="reconfigure">
+      <action name="reconfigure"/>
+    </item>
+    <separator/>
+    <item label="Reboot">
+      <action name="Execute">
+        <command>reboot</command>
+      </action>
+    </item>
+    <item label="Shutdown">
+      <action name="Execute">
+        <command>shutdown -h now</command>
+      </action>
+    </item>
+  </menu>
+</openbox_menu>

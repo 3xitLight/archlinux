@@ -1,0 +1,15 @@
+#!/bin/bash
+
+###################################
+# Start X86_64 VM with 32bit UEFI #
+###################################
+qemu-system-x86_64 \
+-machine type=pc,accel=kvm \
+-enable-kvm \
+-cpu host \
+-smp cores=4 \
+-bios /usr/share/ovmf/ia32/ovmf_code_ia32.bin \
+-m size=4G \
+-vga std \
+-k de \
+-hda /dev/sde \

@@ -1,0 +1,69 @@
+#########################################################################
+#
+# These things are run when an Openbox X Session is started.
+# You may place a similar script in $HOME/.config/openbox/autostart
+# to run user-specific things.
+#
+#########################################################################
+
+#########################################################################
+compton -b --config ~/.config/compton.conf &
+#########################################################################
+
+## set displays #########################################################
+xrandr --output DVI-D-0 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal --output DVI-I-1 --mode 1920x1080 --pos 1920x0 --rotate normal --output DVI-I-0 --off --output DP-1 --off --output DP-0 --off
+#########################################################################
+
+#########################################################################
+##  top tint ############################################################
+tint2 -c /home/xnn/.config/tint2/xNN_top.tint2rc &
+#########################################################################
+## bottom tint ##########################################################
+tint2 -c /home/xnn/.config/tint2/xNN_bottom.tint2rc &
+#########################################################################
+
+# bluetooth #############################################################
+#(sleep 3; blueberry-tray) &
+#########################################################################
+
+#########################################################################
+# Set background image ##################################################
+(sleep 1; nitrogen --restore) &
+#########################################################################
+#on laptops without seperate numeric keyboard put hashtag in front
+numlockx &
+
+## GNOME PolicyKit authentication
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+## Volume control for systray
+(sleep 2; volumeicon) &
+(sleep 2; pasystray) &
+
+## Turn off/on System Beep
+xset b off
+
+## Enable power management
+xfce4-power-manager &
+
+## XFCE4 Settings
+xfsettingsd &
+
+(sleep 5; nm-applet) &
+
+#(sleep 2s && al-conky-session --autostart) &
+
+# Synergy
+# synergys &
+
+# Proxy.sh
+/opt/safejumper/safejumper.sh &
+
+####################################################################
+# Conky ############################################################
+####################################################################
+conky -c /home/xnn/.config/conky/xNN-clock_bg_topleft.conkyrc &
+conky -c /home/xnn/.config/conky/xNN_Skeleton_xos4.conkyrc &
+
+# Steam
+(sleep 3; steam) &
